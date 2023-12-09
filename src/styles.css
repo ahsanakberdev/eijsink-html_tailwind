@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CUSTOM STYLES */
+
+.container{
+    max-width: 1140px !important;
+}
+
+/* OPEN MENU STYLES */
+
+.mobile-navigation.active{
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+}
+
+/* OVERLAY STYLES */
+
+.overloan::before{
+    content: "";
+    background-image: url(../src/img/sunrise-overleon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    z-index: -1;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+}
+
+/* SLICK ARROWS STYLES */
+
+.slick-arrow::before{
+    content: "" !important;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: block;
+    width: 47px !important;
+    height: 17px !important;
+}
+
+.slick-prev::before{
+    background-image: url(../src/img/slider-left-arrow.svg);
+    opacity: 1 !important;
+}
+
+.slick-next::before{
+    background-image: url(../src/img/slider-right-arrow.svg);
+    opacity: 1 !important;
+}
+
+.slick-prev{
+    left: 0 !important;
+    z-index: 99 !important;
+}
+
+.slick-next{
+    right: 0 !important;
+}
+
+.images-section .slick-prev::before{
+    background-image: url(../src/img/project-left-arrow.svg) !important;
+}
+
+.images-section .slick-next::before{
+    background-image: url(../src/img/project-right-arrow.svg) !important;
+}
+
+.images-section .slick-arrow{
+    bottom: -70px !important;
+    top: auto !important;
+}
+
+
+/* RESPONSIVE */
+
+@media(max-width:1279px){
+    .overloan::before {
+        width: 100%;
+        top: 60%;
+    }
+    .slick-next{
+        right: 30px !important;
+    }
+    .section-overleon{
+        left: -65px;
+    }
+}
+
+@media(max-width:1240px){
+    .section-overleon{
+        left: -45px;
+    }
+}
+
+@media(max-width:1170px){
+    .section-overleon{
+        left: -16px;
+    }
+}
+
+
+@media(max-width:576px){
+    .slick-arrow{
+        bottom: 0px !important;
+        top: auto !important;
+    }
+}

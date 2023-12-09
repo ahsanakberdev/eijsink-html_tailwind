@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" style="overflow-x: hidden;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIJSINK</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Maven+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body class="font-Maven">
+    <!-- HEADER -->
+    
+    <header class="font-Lato absolute sm:top-6 top-4 w-full">
+        <div class="container">
+            <div class="header-content flex justify-between sm:items-start items-center">
+                <div class="menu-trigger sm:hidden block cursor-pointer" onclick="openMenu()">
+                    <img src="../src/img/menu-trigger.svg" width="40px" alt="">
+                </div>
+                <div class="navigations-left w-2/5">
+                    <ul class="justify-end sm:flex hidden">
+                        <li><a href="" class="text-white text-sm font-medium hover:text-secondary transition-all duration-300 ease-in">Diensten</a></li>
+                        <li class="ml-14"><a href="" class="text-white text-sm font-medium hover:text-secondary transition-all duration-300 ease-in">Producten</a></li>
+                        <li class="ml-14"><a href="" class="text-white text-sm font-medium hover:text-secondary transition-all duration-300 ease-in">Projecten</a></li>
+                    </ul>
+                </div>
+                <div class="logo w-1/5">
+                    <a href="">
+                        <img src="../src/img/logo.svg" class="mx-auto" alt="">
+                    </a>
+                </div>
+                <div class="navigations-button flex sm:justify-between justify-end items-start w-2/5">
+                    <ul class="sm:flex hidden">
+                        <li><a href="" class="text-white text-sm font-medium hover:text-secondary transition-all duration-300 ease-in">Over ons</a></li>
+                        <li class="ml-14"><a href="" class="text-white text-sm font-medium hover:text-secondary transition-all duration-300 ease-in">Reviews</a></li>
+                        <li class="ml-14"><a href="" class="text-white text-sm font-medium hover:text-secondary transition-all duration-300 ease-in">Offerte aanvragen</a></li>
+                    </ul>
+                    <div class="social-icons flex">
+                        <a href="" class="mr-3">
+                            <img src="../src/img/facebook.svg" alt="">
+                        </a>
+                        <a href="">
+                            <img src="../src/img/linkedin.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HEADER -->
+
+    <!-- MOBILE NAVIGATION -->
+
+    <div id="mobileNav" class="flex justify-center items-center text-center mobile-navigation fixed opacity-0 invisible top-0 -left-96 w-full bottom-0 bg-black h-screen overflow-hidden z-20 transition-all duration-500 ease-in-out">
+        <div class="navigation-wrapper">
+            <div class="cancel absolute right-4 top-4 cursor-pointer" onclick="openMenu()">
+                <img src="../src/img/concel-arrow.svg" class="w-8" alt="">
+            </div>
+            <div class="navigation-list">
+                <ul>
+                    <li class="sm:mb-0 mb-4"><a href="" class="text-white text-2xl font-medium hover:text-secondary transition-all duration-300 ease-in">Diensten</a></li>
+                    <li class="sm:mb-0 mb-4"><a href="" class="text-white text-2xl font-medium hover:text-secondary transition-all duration-300 ease-in">Producten</a></li>
+                    <li class="sm:mb-0 mb-4"><a href="" class="text-white text-2xl font-medium hover:text-secondary transition-all duration-300 ease-in">Projecten</a></li>
+                    <li class="sm:mb-0 mb-4"><a href="" class="text-white text-2xl font-medium hover:text-secondary transition-all duration-300 ease-in">Over ons</a></li>
+                    <li class="sm:mb-0 mb-4"><a href="" class="text-white text-2xl font-medium hover:text-secondary transition-all duration-300 ease-in">Reviews</a></li>
+                    <li class="sm:mb-0 mb-4"><a href="" class="text-white text-2xl font-medium hover:text-secondary transition-all duration-300 ease-in">Offerte aanvragen</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOBILE NAVIGATION -->
+
+    <!-- BANNER -->
+
+    <section class="banner bg-banner md:h-[654px] h-96 bg-cover bg-center bg-no-repeat">
+        <div class="overlay bg-banner-layer bg-cover bg-center h-full">
+           
+        </div>
+    </section>
+
+    <!-- BANNER -->
+
+    <!-- OTHERS -->
+
+    <section class="others bg-secondary lg:py-20 sm:py-14 py-8 relative">
+        <div class="container">
+            <div class="others-content">
+                <div class="absolute -top-14 left-1/2 -translate-x-1/2 round-box">
+                    <img src="../src/img/round.svg" class="lg:w-auto w-20" alt="">
+                </div>
+                <p class="lg:text-2xl text-xl lg:leading-10 leading-normal text-white text-center">Investeren in zonnepanelen om jouw woning te <br class="lg:block hidden">
+                    verduurzamen en direct op energiekosten te besparen? <br class="lg:block hidden">
+                    Wij regelen het voor je!</p>
+                <div class="actions flex justify-center">
+                    <a href="" class="py-2.5 flex px-6 text-secondary2 text-xs rounded-lg mt-7 bg-white font-medium">Ontvang vrijblijvend advies  <img src="../src/img/arrow-right.svg" class="ml-2" alt=""></a>
+                </div>
+                <div class="absolute -bottom-7 left-1/2 -translate-x-1/2 round-box">
+                    <img src="../src/img/polygon.svg" class="lg:w-auto w-20" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OTHERS -->
+
+    <!-- OUR SERVICES -->
+
+    <section class="our-services xl:pt-28 lg:pt-24 pt-16 xl:pb-32 lg:pb-24 pb-16">
+        <div class="container">
+            <div class="services-content">
+                <div class="title sm:text-left text-center">
+                    <h2 class="text-3xl font-semibold text-black">Onze diensten</h2>
+                </div>
+                <div class="flex flex-wrap xl:mt-14 lg:mt-10 mt-8">
+                    <div class="service-box lg:w-1/2 w-full mb-12">
+                        <div class="flex sm:flex-row flex-col justify-between sm:text-left text-center">
+                            <div class="picture basis-full sm:mb-0 mb-4">
+                                <img src="../src/img/service-1.svg" class="sm:mx-0 mx-auto" alt="">
+                            </div>
+                            <div class="info">
+                                <h4 class="text-2xl font-medium text-secondary sm:pb-3 pb-0">Deskundig advies</h4>
+                                <p class="text-sm font-normal leading-6 pt-3 sm:pr-8 pr-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. Cras erat diam, ullamcorper vel eros vel, scelerisque tincidunt purus. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-box lg:w-1/2 w-full mb-12">
+                        <div class="flex sm:flex-row flex-col justify-between sm:text-left text-center">
+                            <div class="picture basis-full sm:mb-0 mb-4">
+                                <img src="../src/img/service-2.svg" class="sm:mx-0 mx-auto" alt="">
+                            </div>
+                            <div class="info sm:pl-8 pl-0">
+                                <h4 class="text-2xl font-medium text-secondary sm:pb-3 pb-0">Leggen & installeren zonnepanelen</h4>
+                                <p class="text-sm font-normal leading-6 pt-3 sm:pr-8 pr-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. Cras erat diam, ullamcorper vel eros vel, scelerisque tincidunt purus. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-box lg:w-1/2 w-full mb-12">
+                        <div class="flex sm:flex-row flex-col justify-between sm:text-left text-center">
+                            <div class="picture basis-full sm:mb-0 mb-4">
+                                <img src="../src/img/service-3.svg" class="sm:mx-0 mx-auto" alt="">
+                            </div>
+                            <div class="info">
+                                <h4 class="text-2xl font-medium text-secondary sm:pb-3 pb-0">Real-time app</h4>
+                                <p class="text-sm font-normal leading-6 pt-3 sm:pr-8 pr-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. Cras erat diam, ullamcorper vel eros vel, scelerisque tincidunt purus. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-box lg:w-1/2 w-full mb-12">
+                        <div class="flex sm:flex-row flex-col justify-between sm:text-left text-center">
+                            <div class="picture basis-full sm:mb-0 mb-4">
+                                <img src="../src/img/service-4.svg" class="sm:mx-0 mx-auto" alt="">
+                            </div>
+                            <div class="info sm:pl-6 pl-0">
+                                <h4 class="text-2xl font-medium text-secondary sm:pb-3 pb-0">Support</h4>
+                                <p class="text-sm font-normal leading-6 pt-3 sm:pr-8 pr-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. Cras erat diam, ullamcorper vel eros vel, scelerisque tincidunt purus. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR SERVICES -->
+
+    <!-- BG SECTION -->
+
+    <section class="bg-section bg-other h-[330px] bg-cover bg-center bg-no-repeat">
+    </section>
+
+    <!-- BG SECTION -->
+
+    <!-- OTHERS -->
+
+    <section class="others bg-secondary relative lg:py-20 sm:py-14 py-8 sm:pb-0 pb-8">
+        <div class="absolute -top-14 left-1/2 -translate-x-1/2 round-box">
+            <img src="../src/img/round-2.svg" class="sm:w-auto w-20" alt="">
+        </div>
+        <div class="absolute -bottom-7 left-1/2 -translate-x-1/2 round-box">
+            <img src="../src/img/polygon.svg" alt="">
+        </div>
+        <div class="container">
+            <div class="others-content">
+                <div class="others-content-slider custom-slider">
+                    <div>  
+                        <h3 class="lg:text-3xl text-2xl font-semibold text-white text-center">Woorden van klanten</h3>
+                        <p class="xl:text-xl lg:text-lg text-base md:leading-8 leading-normal text-white text-center pt-5 xl:pb-0 pb-10">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br class="lg:block hidden">
+                            Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est.” <br class="lg:block hidden">
+                            Voor -en achternaam</p>
+                    </div>
+                    <div>  
+                        <h3 class="lg:text-3xl text-2xl font-semibold text-white text-center">Woorden van klanten</h3>
+                        <p class="xl:text-xl lg:text-lg text-base md:leading-8 leading-normal text-white text-center pt-5 xl:pb-0 pb-10">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br class="lg:block hidden">
+                            Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est.” <br class="lg:block hidden">
+                            Voor -en achternaam</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OTHERS -->
+
+    <!-- OUR PRODUCTS -->
+
+    <section class="our-products lg:pt-32 md:pt-24 pt-16">
+        <div class="container">
+            <div class="our-products-content">
+                <div class="title-paragraph text-center">
+                    <h2 class="text-3xl font-semibold text-black">Onze producten</h2>
+                    <p class="text-sm font-normal leading-6 sm:pt-7 pt-4 sm:w-3/4 w-full mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. Suspendisse et suscipit est. Cras erat diam, ullamcorper vel eros vel, scelerisque tincidunt purus. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="product-grid xl:mt-14 mt-8">
+                    <div class="flex xl:flex-nowrap flex-wrap">
+                        <div class="xl:w-1/5 md:w-1/2 w-full">
+                            <div class="product-box mb-4">
+                                <div class="picture">
+                                    <img src="../src/img/product-1.png" class="sm:w-auto w-full" alt="">
+                                </div>
+                                <div class="title">
+                                    <h4 class="text-xl text-secondary font-medium sm:pt-4 pt-2 sm:text-left text-center">Zonnepanelen</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/5 md:w-1/2 w-full">
+                            <div class="product-box mb-4">
+                                <div class="picture">
+                                    <img src="../src/img/product-2.png" class="sm:w-auto w-full" alt="">
+                                </div>
+                                <div class="title">
+                                    <h4 class="text-xl text-secondary font-medium sm:pt-4 pt-2 sm:text-left text-center">Omvormers</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/5 md:w-1/2 w-full">
+                            <div class="product-box mb-4">
+                                <div class="picture">
+                                    <img src="../src/img/product-3.png" class="sm:w-auto w-full" alt="">
+                                </div>
+                                <div class="title">
+                                    <h4 class="text-xl text-secondary font-medium sm:pt-4 pt-2 sm:text-left text-center">Montagemateriaal</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/5 md:w-1/2 w-full">
+                            <div class="product-box mb-4">
+                                <div class="picture">
+                                    <img src="../src/img/product-4.png" class="sm:w-auto w-full" alt="">
+                                </div>
+                                <div class="title">
+                                    <h4 class="text-xl text-secondary font-medium sm:pt-4 pt-2 sm:text-left text-center">Solarkabels</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="xl:w-1/5 md:w-1/2 w-full">
+                            <div class="product-box mb-4">
+                                <div class="picture"> 
+                                    <img src="../src/img/product-5.png" class="sm:w-auto w-full" alt="">
+                                </div>
+                                <div class="title">
+                                    <h4 class="text-xl text-secondary font-medium sm:pt-4 pt-2 sm:text-left text-center">Netaansluitingen</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="actions flex justify-center">
+                        <a href="" class="py-2.5 flex px-6 text-white text-xs rounded-lg mt-7 bg-green font-medium">Ontvang vrijblijvend advies  <img src="../src/img/arrow-white.svg" class="ml-2" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR PRODUCTS -->
+
+    <!-- IMAGES SECTION -->
+
+    <section class="images-section bg-light pt-20 pb-28 mt-20">
+        <div class="container">
+            <div class="images-slider custom-slider">
+                <div>
+                    <div class="images-flex flex lg:flex-nowrap flex-wrap">
+                        <div class="lg:w-[30%] w-full flex flex-col items-stretch">
+                            <div class="picture relative cursor-pointer">
+                                <img src="../src/img/project-1.png" class="w-full" alt="">
+                                <div class="meta-text bg-secondary opacity-90 absolute top-0 right-0 bottom-0 left-0 pl-10 flex flex-col justify-center">
+                                    <h4 class="text-xl text-white font-medium">Projectnaam</h4>
+                                    <p class="text-sm text-white leading-6 pt-1 font-normal">Korte omschrijving van het project zodra je met de cursor over de afbeelding beweegt. </p>
+                                </div>
+                            </div>
+                            <div class="picture h-full">
+                                <img src="../src/img/project-2.png"  class="w-full h-full" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:w-2/5 w-full">
+                            <div class="picture h-full">
+                                <img src="../src/img/project-3.png"  class="w-full h-full" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:w-[30%] w-full">
+                            <div class="picture ">
+                                <img src="../src/img/project-4.png"  class="w-full" alt="">
+                            </div>
+                            <div class="picture">
+                                <img src="../src/img/project-5.png"  class="w-full" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="images-flex flex lg:flex-nowrap flex-wrap">
+                        <div class="lg:w-[30%] w-full flex flex-col items-stretch">
+                            <div class="picture relative cursor-pointer">
+                                <img src="../src/img/project-1.png" class="w-full" alt="">
+                                <div class="meta-text bg-secondary opacity-90 absolute top-0 right-0 bottom-0 left-0 pl-10 flex flex-col justify-center">
+                                    <h4 class="text-xl text-white font-medium">Projectnaam</h4>
+                                    <p class="text-sm text-white leading-6 pt-1 font-normal">Korte omschrijving van het project zodra je met de cursor over de afbeelding beweegt. </p>
+                                </div>
+                            </div>
+                            <div class="picture h-full">
+                                <img src="../src/img/project-2.png"  class="w-full h-full" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:w-2/5 w-full">
+                            <div class="picture h-full">
+                                <img src="../src/img/project-3.png"  class="w-full h-full" alt="">
+                            </div>
+                        </div>
+                        <div class="lg:w-[30%] w-full">
+                            <div class="picture ">
+                                <img src="../src/img/project-4.png"  class="w-full" alt="">
+                            </div>
+                            <div class="picture">
+                                <img src="../src/img/project-5.png"  class="w-full" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMAGES SECTION -->
+
+    <!-- OVERLOAN -->
+
+    <section class="overloan bg-secondary relative overflow-hidden xl:py-40 py-12 pb-0">
+        <div class="container">
+            <div class="overloan-content">
+                <div class="flex xl:flex-nowrap flex-wrap">
+                    <div class="xl:w-1/2 w-full">
+                        <div class="box-content relative xl:pb-0 pb-8">
+                            <div class="absolute xl:-right-[20%] right-auto xl:top-1/2 top-[110%] xl:left-auto left-1/2 -translate-x-1/2 -translate-y-1/2 z-[99]">
+                                <img src="../src/img/overleon-vector.svg" class="sm:w-auto w-20" alt="">
+                            </div>
+                            <h3 class="text-3xl font-semibold text-white">Woorden van klanten</h3>
+                            <p class="text-sm leading-6 text-white pt-5 sm:pr-24 pr-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at  pellentesque. Suspendisse et suscipit est. Cras erat diam, ullamcorper vel eros vel, scelerisque tincidunt purus. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+                            <div class="actions flex justify-start">
+                                <a href="" class="py-2.5 flex px-6 text-white text-xs rounded-lg mt-7 bg-transparent font-medium border border-white">Ontvang vrijblijvend advies  <img src="../src/img/arrow-white.svg" class="ml-2" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:w-1/2 section-overleon w-full xl:mt-0 mt-8 xl:static relative xl:left-0 -left-4 ">
+                        <div class="picture xl:w-full w-screen">
+                            <img src="../src/img/overleon.png" class="xl:absolute relative right-0 top-0 bottom-0 xl:w-1/2 w-full h-full object-cover" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OVERLOAN -->
+
+    <!-- FORM AREA -->
+
+    <section class="form-area lg:w-2/5 w-full mx-auto xl:pt-20 lg:pt-14 pt-12">
+        <div class="container">
+            <div class="form-content">
+                <div class="title">
+                    <h3 class="text-3xl font-semibold text-black text-center">Offerte aanvragen</h3>
+                    <p class="text-sm lg:leading-6 leading-normal text-dark lg:pt-5 pt-3 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit <br class="lg:block hidden"> amet, consectetur adipiscing elit. Quisque mollis bibendum lacus at pellentesque. </p>
+                </div>
+                <div class="form-fields mt-6">
+                    <div class="flex items-end flex-wrap">
+                        <div class="form-group w-1/2 pr-3">
+                            <label for="" class="block text-sm font-medium text-black pb-2">Naam*</label>
+                            <input type="text" name="" id="" class="w-full border border-light2 bg-light3 h-9 rounded-lg placeholder:text-grey pl-4" placeholder="Voornaam">
+                        </div>
+                        <div class="form-group w-1/2 pl-3">
+                            <input type="text" name="" id="" class="w-full border border-light2 bg-light3 h-9 rounded-lg placeholder:text-grey pl-4" placeholder="Achternaam">
+                        </div>
+                        <div class="form-group w-full mt-5">
+                            <label for="" class="block text-sm font-medium text-black pb-2">Email*</label>
+                            <input type="email" name="" id="" class="w-full border border-light2 bg-light3 h-9 rounded-lg placeholder:text-grey pl-4" placeholder="Emailadres">
+                        </div>
+                        <div class="form-group w-full mt-5">
+                            <label for="" class="block text-sm font-medium text-black pb-2">Telefoonnummer</label>
+                            <input type="number" name="" id="" class="w-full border border-light2 bg-light3 h-9 rounded-lg placeholder:text-grey pl-4" placeholder="Telefoonnummer">
+                        </div>
+                        <div class="form-group w-full mt-5">
+                            <label for="" class="block text-sm font-medium text-black">Adres*</label>
+                            <input type="text" name="" id="" class="w-full border border-light2 bg-light3 h-9 rounded-lg placeholder:text-grey pl-4 mt-2" placeholder="Straatnaam + huisnummer">
+                            <input type="number" name="" id="" class="w-full border border-light2 bg-light3 h-9 rounded-lg placeholder:text-grey pl-4 mt-2" placeholder="Postcode">
+                            <input type="text" name="" id="" class="w-full border border-light2 bg-light3 h-9 rounded-lg placeholder:text-grey pl-4 mt-2" placeholder="Woonplaats">
+                        </div>
+                        <div class="form-group w-full mt-5">
+                            <label for="" class="block text-sm font-medium text-black pb-2">Waar wilt u graag een offerte voor aanvragen?* </label>
+                            <textarea name="" id="" cols="30" rows="10" class="h-32 w-full border border-light2 bg-light3 rounded-lg placeholder:text-grey pl-4" placeholder="Geef hier uw wensen aan. Wij nemen vervolgens contact met u op."></textarea>
+                        </div>
+                    </div>
+                    <div class="actions flex justify-end">
+                        <a href="" class="py-2.5 flex px-6 text-white text-xs rounded-lg mt-7 bg-green font-medium">Offerte aanvragen<img src="../src/img/arrow-white.svg" class="ml-2" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FORM AREA -->
+
+    <!-- FOOTER -->
+
+    <footer class="bg-black mt-20">
+        <div class="container">
+            <div class="footer-wrapper flex lg:flex-nowrap flex-wrap justify-between py-16">
+                <div class="lg:w-1/3 w-full lg:mb-0 mb-4">
+                    <div class="logo-content lg:text-left text-center">
+                        <div class="footer-logo">
+                            <a href="">
+                                <img src="../src/img/footer-logo.svg" class="lg:mx-0 mx-auto" alt="">
+                            </a>
+                        </div>
+                        <ul class="mt-6">
+                            <li><a href="" class="text-xs font-Lato font-normal text-white inline-block">Algemene Voorwaarden</a></li>
+                            <li><a href="" class="text-xs font-Lato font-normal text-white mt-1 inline-block"> Privacy Statement</a></li>        
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 w-full lg:mb-0 mb-4">
+                    <div class="footer-box lg:text-left text-center">
+                        <h4 class="text-2xl font-semibold text-white">Contact</h4>
+                        <ul class="lg:mt-6 mt-3">
+                            <li class="text-base font-normal text-white pb-2">Adres</li>
+                            <li class="text-base font-normal text-white pb-2">Plaatsnaam</li>
+                            <li class="flex lg:justify-start justify-center text-base font-normal text-white pb-2"><img src="../src/img/phone.svg" alt="" class="mr-4"> Telefoonnummer</li>
+                            <li class="flex lg:justify-start justify-center text-base font-normal text-white pb-2"><img src="../src/img/mail.svg" alt="" class="mr-4"> Emailadres</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 w-full lg:mb-0 mb-4">
+                    <div class="footer-box lg:text-left text-center">
+                        <h4 class="text-2xl font-semibold text-white">Volg ons op</h4>
+                        <div class="social-icons mt-6 flex lg:justify-start justify-center">
+                            <a href="">
+                                <img src="../src/img/facebook-f.svg" alt="">
+                            </a>
+                            <a href="" class="ml-3">
+                                <img src="../src/img/linkedin-f.svg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom border-t border-lightBorder py-4 text-white font-normal text-center">
+            ©2023 Eijsink Solar Systems
+        </div>
+    </footer>
+
+    <!-- FOOTER -->
+
+
+
+    <!-- SCRIPT JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="../src/js/main.js"></script>
+
+</body>
+</html>
